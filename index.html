@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Prueba</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    form#search-178 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    form#search-178 input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .tm-heading-large {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #005577;
+    }
+
+    .uk-overlay-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .uk-overlay-toggle img {
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .uk-panel {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .uk-panel p {
+      font-size: 18px;
+    }
+
+    .uk-width-medium-1-3 {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: calc(30% - 20px);
+      vertical-align: top;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <form id="search-178" class="form-buscador">
+    <input type="text" placeholder="Buscar...">
+  </form>
+
+  <div class="tm-heading-large">WOW</div>
+  <div style="max-width: 600px; margin: 0 auto 30px; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #005577;">Contáctanos</h2>
+    <form id="contact-form">
+      <div style="margin-bottom: 15px;">
+        <label for="nombre" style="display: block; margin-bottom: 5px;">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label for="correo" style="display: block; margin-bottom: 5px;">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label for="mensaje" style="display: block; margin-bottom: 5px;">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+      </div>
+      <div style="text-align: center;">
+        <button type="submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="uk-overlay-toggle">
+    <img width="300" src="https://akamai.sscdn.co/letras/360x360/albuns/3/a/7/6/2457471732883201.jpg" alt="Imagen ejemplo">
+  </div>
+
+  <div class="uk-panel">
+    <p>Este es un párrafo.</p>
+  </div>
+
+  <div class="uk-width-medium-1-3">Tarjeta 1</div>
+  <div class="uk-width-medium-1-3">Tarjeta 2</div>
+  <div class="uk-width-medium-1-3">Tarjeta 3</div>
+
+  <a href="#">Primer enlace</a>
+
+  <div style="text-align:center; margin-top: 20px;">
+    <img height="300" src="https://cdn-images.dzcdn.net/images/cover/fee4b7345f658a57a39747bf24b7466b/0x1900-000000-80-0-0.jpg" alt="Imagen 1">
+    <img height="300" width="300" src="https://rechismes.com/wp-content/uploads/2023/09/FEID-2.jpg" alt="Imagen 2">
+    <img height="300" width="300" src="https://m.media-amazon.com/images/I/51ckWuPodML._UXNaN_FMjpg_QL85_.jpg" alt="Imagen 3">
+    <img height="300" width="300" src="https://www.universalmusic.com.ec/files/2024/04/COVER-AF_MANIFESTING-2-RENGLONES-1024x1024.png" alt="Imagen 4">
+    <img height="300" width="300" src="https://e-cdns-images.dzcdn.net/images/cover/eb3dcd85fc4f0e8a90ef35f26ae39bd1/500x500-000000-80-0-0.jpg" alt="Imagen 5">
+  </div>
+
+  <script src="asyncronismo-dom.js"></script>
+</body>
+</html>
